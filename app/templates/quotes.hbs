@@ -1,6 +1,10 @@
 <ol>
 {{#each model as |quote|}}
-<li>{{quote.quote}}</li>
+<li>
+  {{#link-to "quote" quote}}
+    {{quote.quote}}
+  {{/link-to}}
+</li>
 {{/each}}
 </ol>
 

@@ -7,7 +7,7 @@ const Router = Ember.Router.extend({
 
 Router.map(function() {
   this.route('quotes');
-  this.route('quote');
+  this.route('quote', { path: '/quotes/:quote_id'});
 });
 
 export default Router;
